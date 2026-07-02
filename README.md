@@ -1,0 +1,1 @@
+This is the GitHub repository for MICCAI 2026 Paper "Multi-Stage NeRF for Efficient 3D Coronary Artery Reconstruction from Two Narrow-Angle Angiographic Projections". The code will be released shortly.

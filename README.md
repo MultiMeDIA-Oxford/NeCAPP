@@ -12,7 +12,7 @@ Follow [ENVIRONMENT.md](ENVIRONMENT.md) to create the environment, install [requ
 
 ## Example data
 
-The `data/` folder contains one generated right coronary artery (RCA) example:
+The `data/` folder contains one synthetic right coronary artery (RCA) example:
 
 | File | Description |
 |---|---|

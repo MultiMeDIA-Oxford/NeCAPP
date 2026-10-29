@@ -1,6 +1,6 @@
 # NeCA++
 
-Code for **Multi-Stage NeRF for Efficient 3D Coronary Artery Reconstruction from Two Narrow-Angle Angiographic Projections** ([paper](https://arxiv.org/abs/2609.15550)).
+Code for **[MICCAI 2026] Multi-Stage NeRF for Efficient 3D Coronary Artery Reconstruction from Two Narrow-Angle Angiographic Projections** ([paper](https://link.springer.com/chapter/10.1007/978-3-032-38186-6_55)).
 
 NeCA++ reconstructs coronary arteries from two angiographic projections. It optimizes a neural implicit representation per case, using coarse localization followed by progressive refinement. No pretrained model is required.
 

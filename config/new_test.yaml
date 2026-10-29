@@ -1,0 +1,57 @@
+# Project configuration; original values and paths are preserved.
+# Experiment names and input/output paths.
+exp:
+  expname: CCTA
+  expdir: ./logs/
+  dataconfig: ./data/config.yml
+
+# Occupancy MLP architecture.
+network:
+  net_type: mlp
+  num_layers: 8
+  hidden_dim: 256
+  skips: [4]
+  out_dim: 1
+  last_activation: sigmoid
+  bound: 50
+
+# Retained alternative coarse-network settings.
+network_coarse:
+  num_layers: 4
+  hidden_dim: 64
+  skips: []
+  out_dim: 1
+  last_activation: sigmoid
+
+# Spatial hash-grid encoding parameters.
+encoder:
+  encoding: hashgrid
+  input_dim: 3
+  num_levels: 16
+  level_dim: 2
+  base_resolution: 16
+  log2_hashmap_size: 19
+
+# Network query chunk size and existing rendering options.
+render:
+  n_fine: 0
+  netchunk: 30000
+
+# Stage lengths and optimizer settings.
+train:
+  stage: coarse
+  epoch_coarse: 300
+  epoch_fine: 700
+  # Percentage of highest coarse predictions kept before mask dilation: (0, 100].
+  coarse_mask_top_percent: 15
+  lrate: 0.0001
+  lrate_C: 0.0001
+  lrate_F: 0.0001
+  lrate_gamma: 0.1
+
+  resume: False
+
+# Evaluation and checkpoint intervals.
+log:
+  i_eval: 50
+  i_save: 500

@@ -1,0 +1,47 @@
+# Project configuration; original values and paths are preserved.
+datadir: ./data/CCTA_test/data.npy
+numTrain: 2
+GT: /users/catz0894/data/imagecas/20npy
+
+# Source-to-detector distance for each view, in millimeters.
+DSD:
+- 1200.0
+- 1200.0
+
+# Source-to-origin distance for each view, in millimeters.
+DSO:
+- 746.0
+- 746.0
+
+# Origin-to-detector distance for each view, in millimeters.
+DDE:
+- 454.0
+- 454.0
+
+# Detector image dimensions, in pixels.
+nDetector:
+- 512
+- 512
+
+# Detector pixel spacing, in millimeters.
+dDetector:
+- 0.278
+- 0.278
+
+# Reconstruction array dimensions, in voxels.
+nVoxel:
+- 80
+- 80
+- 80
+
+# Voxel spacing in reconstruction array order, in millimeters.
+dVoxel:
+- 1.125
+- 1.125
+- 1.125
+
+# First-view primary and secondary angles, in degrees.
+first_projection_angle: [40,-20]
+
+# Second-view primary and secondary angles, in degrees.
+second_projection_angle: [0,30]
